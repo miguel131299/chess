@@ -3,7 +3,12 @@
 # class used to model the gameboard
 class Gameboard
   def initialize
-    @board = []
+    @board = mda(8, 8)
+  end
+
+  # returns a multidimensional array
+  def mda(width, height)
+    arr = Array.new(width) {Array.new(height)}
   end
 
   def setup_board
