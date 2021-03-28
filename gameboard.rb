@@ -16,6 +16,8 @@ class Gameboard
   end
 
   def valid_position?(position)
-    # todo
+    return false if position.length != 2
+
+    position.all? { |coordinate| coordinate >= 0 && coordinate <= 7 }
   end
 end
